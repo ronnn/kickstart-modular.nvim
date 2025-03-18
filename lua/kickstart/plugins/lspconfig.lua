@@ -236,6 +236,11 @@ return {
             },
           },
         },
+
+        emmet_ls = {
+          capabilities = capabilities,
+          filetypes = { 'html', 'css', 'elixir', 'eelixir', 'heex' },
+        },
       }
 
       -- Ensure the servers and tools above are installed
