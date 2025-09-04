@@ -10,11 +10,18 @@ return {
     'MunifTanjim/nui.nvim',
   },
   cmd = 'Neotree',
+  lazy = false,
   keys = {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
     filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_by_name = {
+          '_build',
+        },
+      },
       window = {
         mappings = {
           ['\\'] = 'close_window',
